@@ -1,0 +1,16 @@
+server:
+  port: 8080
+  tomcat:
+    uri-encoding:  utf-8
+  servlet:
+    context-path: /
+#spring:
+#  kafka:
+#    bootstrap-servers: k8s-node-1:9092,k8s-node-2:9092,k8s-node-3:9092
+#      group-id: test-1
+
+kafka:
+  bootstrap-servers: k8s-node-1:9092,k8s-node-2:9092,k8s-node-3:9092
+  group-id: personmanage-1
+  person: person.attendance
+  vehicle: vehicle.realtime
